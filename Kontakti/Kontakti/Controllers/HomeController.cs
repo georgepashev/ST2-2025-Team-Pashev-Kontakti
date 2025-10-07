@@ -1,6 +1,9 @@
+using System.Data.Entity;
 using System.Diagnostics;
 using Kontakti.Models;
 using Microsoft.AspNetCore.Mvc;
+using Kontakti.Data;
+using Database = Kontakti.Data.Database;
 
 namespace Kontakti.Controllers
 {
@@ -15,7 +18,9 @@ namespace Kontakti.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var contacts = Database.Instance.GetAllContacts();
+
+            return View(contacts);
         }
 
         public IActionResult Privacy()

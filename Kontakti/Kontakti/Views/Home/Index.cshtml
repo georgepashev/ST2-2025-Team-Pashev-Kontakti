@@ -1,8 +1,87 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model List<Kontakti.Models.Contact>
+
+@{
+    ViewData["Title"] = "Контакти";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-4">
+    <h1 class="mb-4">Списък с контакти</h1>
+
+    @if (Model != null && Model.Any())
+    {
+        <table class="table table-hover table-bordered align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>#</th>
+                    <th>Име</th>
+                    <th>Имейл</th>
+                    <th>Телефон</th>
+                    <th style="width: 120px;">Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var contact in Model)
+                {
+                    var collapseId = $"details-{contact.Id}";
+                    <tr>
+                        <td>@contact.Id</td>
+                        <td>@contact.Name</td>
+                        <td>@contact.Email</td>
+                        <td>@contact.PhoneNumber</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#@collapseId"
+                                    aria-expanded="false"
+                                    aria-controls="@collapseId">
+                                Детайли
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="collapse" id="@collapseId">
+                        <td colspan="5">
+                            <div class="p-3 bg-light border rounded">
+                                <dl class="row mb-0">
+                                    <dt class="col-sm-2">Адрес 1</dt>
+                                    <dd class="col-sm-10">@contact.AddressLine1</dd>
+
+                                    <dt class="col-sm-2">Адрес 2</dt>
+                                    <dd class="col-sm-10">@contact.AddressLine2</dd>
+
+                                    <dt class="col-sm-2">Имейл</dt>
+                                    <dd class="col-sm-10">@contact.Email</dd>
+
+                                    <dt class="col-sm-2">Телефон</dt>
+                                    <dd class="col-sm-10">@contact.PhoneNumber</dd>
+                                </dl>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            Няма въведени контакти.
+        </div>
+    }
 </div>
+
+@section Scripts {
+    <script>
+        // По желание: автоматично затваряне на други отворени детайли (accordion ефект)
+        document.addEventListener('click', function (e) {
+            if (e.target.matches('[data-bs-toggle="collapse"]')) {
+                const targetId = e.target.getAttribute('data-bs-target');
+                document.querySelectorAll('tr.collapse.show').forEach(collapseRow => {
+                    if ('#' + collapseRow.id !== targetId) {
+                        new bootstrap.Collapse(collapseRow, { toggle: true });
+                    }
+                });
+            }
+        });
+    </script>
+}

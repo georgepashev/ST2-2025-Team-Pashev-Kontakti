@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\kontakti.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\kontakti.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +27,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Database.cs",
+              "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Data\\Database.cs",
+              "RelativeDocumentMoniker": "Kontakti\\Data\\Database.cs",
+              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Data\\Database.cs",
+              "RelativeToolTip": "Kontakti\\Data\\Database.cs",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAmwMAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T11:54:08.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Kontakti",
+              "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Kontakti.csproj",
+              "RelativeDocumentMoniker": "Kontakti\\Kontakti.csproj",
+              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Kontakti.csproj",
+              "RelativeToolTip": "Kontakti\\Kontakti.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-07T11:53:41.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Contact.cs",
               "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Models\\Contact.cs",
               "RelativeDocumentMoniker": "Kontakti\\Models\\Contact.cs",
               "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Models\\Contact.cs",
               "RelativeToolTip": "Kontakti\\Models\\Contact.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-07T11:39:35.76Z",
               "EditorCaption": ""

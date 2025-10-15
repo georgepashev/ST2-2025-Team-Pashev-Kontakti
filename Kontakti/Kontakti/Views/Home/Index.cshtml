@@ -5,6 +5,10 @@
 }
 
 <div class="container mt-4">
+    <a asp-action="Create" asp-controller="Home" class="btn btn-primary">Създай контакт</a>
+    </div>
+
+<div class="container mt-4">
     <h1 class="mb-4">Списък с контакти</h1>
 
     @if (Model != null && Model.Any())

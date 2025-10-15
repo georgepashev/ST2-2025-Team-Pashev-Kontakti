@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model Kontakti.Models.Contact
+@{
+    ViewData["Title"] = "Създай контакт";
+}
+
+<h2>Създай контакт</h2>
+
+<form asp-action="Create" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="PhoneNumber" class="form-label"></label>
+        <input asp-for="PhoneNumber" class="form-control" />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AddressLine1" class="form-label"></label>
+        <input asp-for="AddressLine1" class="form-control" />
+        <span asp-validation-for="AddressLine1" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AddressLine2" class="form-label"></label>
+        <input asp-for="AddressLine2" class="form-control" />
+        <span asp-validation-for="AddressLine2" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Съхрани контакт</button>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Към списъка</a>   
+
+</form>
+
+@section Scripts{
+    <partial name ="_ValidationScriptsPartial" />
+}

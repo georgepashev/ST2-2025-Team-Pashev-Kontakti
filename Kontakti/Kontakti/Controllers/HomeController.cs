@@ -23,9 +23,40 @@ namespace Kontakti.Controllers
             return View(contacts);
         }
 
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View(new Contact());
+
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Contact contact)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(contact);
+            }
+            else
+            {
+                try
+                {
+                    var id = Database.Instance.AddContact(contact);
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError(string.Empty, $"Insert Failed: {ex.Message}");
+                }                
+
+                return RedirectToAction("Index", "Home");
+
+            }
+        }
+
         public IActionResult Privacy()
         {
-            return View();
+           return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

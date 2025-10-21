@@ -54,10 +54,109 @@ namespace Kontakti.Controllers
             }
         }
 
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            var contact = Database.Instance.GetContactById(id);
+            if (contact == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return View(contact);
+            }
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(Contact contact)
+        {
+            if (!ModelState.IsValid) {
+                return View(contact);
+            }
+            else
+            {
+                try
+                {
+                    var ok = Database.Instance.UpdateContact(contact);
+                    if (!ok) {
+                        ModelState.AddModelError(string.Empty,
+
+                            "Неуспешна редакция");
+                        return View(contact);
+                        
+                    
+                    }
+                    return RedirectToAction("Index", "Home");
+
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError(string.Empty,
+                        $"Update failed: {ex.Message}"
+                        );
+                    return View(contact);
+                }
+            }
+        }
+
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var contact = Database.Instance.GetContactById(id);
+            if (contact == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return View(contact);
+            }
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            else
+            {
+                try
+                {
+                    var ok = Database.Instance.DeleteContact(id);
+                    if (!ok)
+                    {
+                        ModelState.AddModelError(string.Empty,
+
+                            "Неуспешно изтриване");
+                        return View();
+
+
+                    }
+                    return RedirectToAction("Index", "Home");
+
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError(string.Empty,
+                        $"Update failed: {ex.Message}"
+                        );
+                    return View();
+                }
+            }
+        }
+
         public IActionResult Privacy()
         {
-           return View();
+            return View();
         }
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

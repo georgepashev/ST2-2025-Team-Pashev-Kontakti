@@ -1,0 +1,41 @@
+﻿@model Kontakti.Models.Contact
+@{
+    ViewData["Title"] = "Редакция на контакт";
+}
+<h2 class="mb-3">Редакция на контакт</h2>
+<form asp-action="Edit" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="PhoneNumber" class="form-label"></label>
+        <input asp-for="PhoneNumber" class="form-control" />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="AddressLine1" class="form-label"></label>
+        <input asp-for="AddressLine1" class="form-control" />
+        <span asp-validation-for="AddressLine1" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="AddressLine2" class="form-label"></label>
+        <input asp-for="AddressLine2" class="form-control" />
+        <span asp-validation-for="AddressLine2" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-success">Запази</button>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Отказ</a>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

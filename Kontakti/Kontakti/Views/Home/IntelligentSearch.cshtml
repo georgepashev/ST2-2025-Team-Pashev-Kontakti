@@ -1,0 +1,79 @@
+﻿@model Kontakti.ViewModels.IntelligentSearchVm
+@{
+
+    ViewData["Title"] = "Интелигентно търсене";
+}
+<div class="container mt-4">
+    <h1 class="mb-3">Интелигентно търсене (LLM)</h1>
+    <div class="container mt-4">
+        <a asp-action="Create" asp-controller="Home" class="btn btn-primary">Създай контакт</a>
+        <a asp-action="IntelligentSearch" asp-controller="Home" class="btn btn-info ms-2">
+            Интелигентно търсене (LLM)
+        </a>
+        <a asp-action="Index" asp-controller="Home" class="btn btn-primary">Начало</a>
+
+    </div>
+
+    <form asp-action="IntelligentSearch" method="post">
+        @Html.AntiForgeryToken()
+        <div class="mb-3">
+            <label class="form-label">Опиши какво търсиш (естествен език):</label>
+<textarea class="form-control" name="NaturalQuery"
+          rows="3">@Model?.NaturalQuery</textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Търси</button>
+        <a asp-action="Index" class="btn btn-secondary ms-2">Назад</a>
+    </form>
+    @if (!string.IsNullOrWhiteSpace(Model?.Error))
+    {
+        <div class="alert alert-danger mt-3">@Model.Error</div>
+    }
+    @if (!string.IsNullOrWhiteSpace(Model?.JsonPlan))
+    {
+        <div class="mt-3">
+            <details>
+                <summary class="text-muted">Показване на JSON плана (дебъг)</summary>
+    <pre class="bg-light p-3 border rounded small">@Model.JsonPlan</pre>
+            </details>
+        </div>
+    }
+    @if (Model?.Results != null)
+    {
+        <div class="mt-4">
+            <h5>Резултати: @Model.Results.Count</h5>
+            @if (Model.Results.Any())
+            {
+                <table class="table table-hover table-bordered align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>#</th>
+                            <th>Име</th>
+
+                            <th>Имейл</th>
+                            <th>Телефон</th>
+                            <th>Адрес 1</th>
+                            <th>Адрес 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var c in Model.Results)
+                        {
+                            <tr>
+                                <td>@c.Id</td>
+                                <td>@c.Name</td>
+                                <td>@c.Email</td>
+                                <td>@c.PhoneNumber</td>
+                                <td>@c.AddressLine1</td>
+                                <td>@c.AddressLine2</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <div class="alert alert-info">Няма резултати.</div>
+            }
+        </div>
+    }
+</div>

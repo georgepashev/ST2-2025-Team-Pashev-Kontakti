@@ -1,8 +1,10 @@
+using Kontakti.Data;
+using Kontakti.Models;
+using Kontakti.Services;
+using Kontakti.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 using System.Data.Entity;
 using System.Diagnostics;
-using Kontakti.Models;
-using Microsoft.AspNetCore.Mvc;
-using Kontakti.Data;
 using Database = Kontakti.Data.Database;
 
 namespace Kontakti.Controllers
@@ -10,10 +12,13 @@ namespace Kontakti.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly LlmClient _llm;
 
-        public HomeController(ILogger<HomeController> logger)
+
+        public HomeController(ILogger<HomeController> logger, LlmClient llm)
         {
             _logger = logger;
+            _llm = llm;
         }
 
         public IActionResult Index()
@@ -163,5 +168,47 @@ namespace Kontakti.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [HttpGet]
+        public IActionResult IntelligentSearch()
+        {
+            return View(new IntelligentSearchVm());
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> IntelligentSearch(IntelligentSearchVm model)
+
+        {
+            if (string.IsNullOrWhiteSpace(model.NaturalQuery))
+            {
+                model.Error = "Въведи естествен текст за търсене.";
+                return View(model);
+            }
+            try
+            {
+                var json = await _llm.GetJsonPlanAsync(model.NaturalQuery!,
+                Prompts.IntelligentSearchSystem);
+                model.JsonPlan = json;
+                var plan = System.Text.Json.JsonSerializer.Deserialize<QueryPlan>(
+                json,
+                new System.Text.Json.JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                if (plan == null || plan.Filters == null || plan.Filters.Count == 0)
+                {
+                    model.Error = "LLM не върна валиден план за търсене.";
+                    return View(model);
+                }
+                var results = Database.Instance.SelectContactsAdvanced(plan);
+                model.Results = results;
+                return View(model);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Intelligent search failed.");
+                model.Error = "Възникна грешка при интелигентното търсене.";
+                return View(model);
+            }
+        }
+
+
     }
 }

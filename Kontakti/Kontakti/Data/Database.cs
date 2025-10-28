@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SQLite;
 using System.IO;
+using System.Text;
 
 namespace Kontakti.Data
 {
@@ -293,5 +294,113 @@ namespace Kontakti.Data
             return results;
         }
 
+
+
+        public List<Contact> SelectContactsAdvanced(QueryPlan plan)
+        {
+            // Бял списък
+            var allowedCols = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+{ "Id","Name","Email","PhoneNumber","AddressLine1","AddressLine2" };
+            var allowedOps = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+{ "equals","contains","starts_with","ends_with" };
+            var sql = new StringBuilder("SELECT * FROM Contacts");
+            var where = new List<string>();
+            var parameters = new List<SQLiteParameter>();
+            int p = 0;
+            foreach (var f in plan.Filters ?? Enumerable.Empty<QueryPlan.Filter>())
+            {
+                if (string.IsNullOrWhiteSpace(f.Column) || !allowedCols.Contains(f.Column)) continue;
+                if (string.IsNullOrWhiteSpace(f.Op) || !allowedOps.Contains(f.Op)) continue;
+                string paramName = "@p" + (p++);
+                string expr;
+                switch (f.Op.ToLowerInvariant())
+                {
+
+                    case "equals":
+                        expr = $"{f.Column} = {paramName} COLLATE NOCASE";
+                        parameters.Add(new SQLiteParameter(paramName, f.Value ?? string.Empty));
+                        break;
+                    case "contains":
+                        expr = $"{f.Column} LIKE {paramName} ESCAPE '\\' COLLATE NOCASE";
+                        parameters.Add(new SQLiteParameter(paramName, "%" + EscapeLike(f.Value ??
+                        string.Empty) + "%"));
+                        break;
+                    case "starts_with":
+                        expr = $"{f.Column} LIKE {paramName} ESCAPE '\\' COLLATE NOCASE";
+                        parameters.Add(new SQLiteParameter(paramName, EscapeLike(f.Value ??
+                        string.Empty) + "%"));
+                        break;
+                    case "ends_with":
+                        expr = $"{f.Column} LIKE {paramName} ESCAPE '\\' COLLATE NOCASE";
+                        parameters.Add(new SQLiteParameter(paramName, "%" + EscapeLike(f.Value ??
+                        string.Empty)));
+                        break;
+                    default:
+                        continue;
+                }
+                where.Add(expr);
+            }
+            if (where.Count > 0)
+            {
+                sql.Append(" WHERE ");
+                sql.Append(string.Join(" AND ", where));
+            }
+            // ORDER BY
+            if (plan.Order_By != null && plan.Order_By.Count > 0)
+            {
+                var orders = new List<string>();
+                foreach (var ob in plan.Order_By)
+                {
+                    if (allowedCols.Contains(ob.Column))
+                    {
+                        var dir = (ob.Direction ?? "asc").Equals("desc", StringComparison.OrdinalIgnoreCase)
+                        ? "DESC" : "ASC";
+                        // Name/Email да са case-insensitive при сортиране
+                        if (!ob.Column.Equals("Id", StringComparison.OrdinalIgnoreCase))
+                            orders.Add($"{ob.Column} COLLATE NOCASE {dir}");
+
+                        else
+                            orders.Add($"{ob.Column} {dir}");
+                    }
+                }
+                if (orders.Count > 0)
+                {
+                    sql.Append(" ORDER BY ");
+                    sql.Append(string.Join(", ", orders));
+                }
+            }
+            else
+            {
+                sql.Append(" ORDER BY Name COLLATE NOCASE, Id");
+            }
+            // LIMIT/OFFSET
+            int limit = Math.Clamp(plan.Limit ?? 50, 1, 200);
+            int offset = Math.Max(plan.Offset ?? 0, 0);
+            sql.Append(" LIMIT @Limit OFFSET @Offset");
+            parameters.Add(new SQLiteParameter("@Limit", limit));
+            parameters.Add(new SQLiteParameter("@Offset", offset));
+            var results = new List<Contact>();
+            using (var connection = new SQLiteConnection(_connectionString))
+            {
+                connection.Open();
+                using var cmd = new SQLiteCommand(sql.ToString(), connection);
+                cmd.Parameters.AddRange(parameters.ToArray());
+                using var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    results.Add(new Contact
+                    {
+                        Id = Convert.ToInt32(reader["Id"]),
+                        Name = reader["Name"]?.ToString(),
+                        Email = reader["Email"]?.ToString(),
+                        PhoneNumber = reader["PhoneNumber"] as string,
+                        AddressLine1 = reader["AddressLine1"] as string,
+                        AddressLine2 = reader["AddressLine2"] as string
+                    });
+                }
+            }
+            return results;
+
+        }
     }
 }

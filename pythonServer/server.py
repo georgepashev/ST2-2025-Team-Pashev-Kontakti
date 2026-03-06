@@ -37,7 +37,7 @@ def try_load_model():
         llm_obj = Llama(
             model_path=MODEL_PATH,
             n_ctx=CTX_SIZE,
-            n_threads=THREADS,
+            n_threads=1,
             n_gpu_layers=N_GPU_LAYERS,
             # chat_format="mistral",
             use_mmap=False,   # <-- key change

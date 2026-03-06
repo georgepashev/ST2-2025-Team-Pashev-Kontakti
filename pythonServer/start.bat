@@ -16,7 +16,7 @@ call .venv\Scripts\activate
 
 REM --- Install dependencies if not already installed ---
 echo Installing dependencies (this may take a while the first time)...
-pip install --upgrade pip >nul
+
 pip install fastapi uvicorn "llama-cpp-python==0.2.90" pydantic >nul
 
 REM --- Environment configuration ---

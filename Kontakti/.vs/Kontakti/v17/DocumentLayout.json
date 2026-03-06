@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\models\\queryplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\models\\queryplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\services\\prompts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\services\\prompts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\services\\llmclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\services\\llmclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,28 +51,12 @@
       "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\kontakti.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\models\\queryplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\models\\queryplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\services\\llmclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\services\\llmclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\services\\llmoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\services\\llmoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\services\\prompts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\services\\prompts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\services\\llmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\services\\llmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -65,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|d:\\users\\fmi\\documents\\github\\st2-2025-team-pashev-kontakti\\kontakti\\kontakti\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{447C1015-5A24-475C-AE0E-8BE6369445C1}|Kontakti\\Kontakti.csproj|solutionrelative:kontakti\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,76 +78,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IntelligentSearch.cshtml",
-              "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Views\\Home\\IntelligentSearch.cshtml",
-              "RelativeDocumentMoniker": "Kontakti\\Views\\Home\\IntelligentSearch.cshtml",
-              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Views\\Home\\IntelligentSearch.cshtml",
-              "RelativeToolTip": "Kontakti\\Views\\Home\\IntelligentSearch.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T12:55:21.987Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IntelligentSearchVm.cs",
-              "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\ViewModels\\IntelligentSearchVm.cs",
-              "RelativeDocumentMoniker": "Kontakti\\ViewModels\\IntelligentSearchVm.cs",
-              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\ViewModels\\IntelligentSearchVm.cs",
-              "RelativeToolTip": "Kontakti\\ViewModels\\IntelligentSearchVm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T12:48:16.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "QueryPlan.cs",
-              "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Models\\QueryPlan.cs",
-              "RelativeDocumentMoniker": "Kontakti\\Models\\QueryPlan.cs",
-              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Models\\QueryPlan.cs",
-              "RelativeToolTip": "Kontakti\\Models\\QueryPlan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T12:46:33.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LlmClient.cs",
-              "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Services\\LlmClient.cs",
-              "RelativeDocumentMoniker": "Kontakti\\Services\\LlmClient.cs",
-              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Services\\LlmClient.cs",
-              "RelativeToolTip": "Kontakti\\Services\\LlmClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T12:45:44.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Prompts.cs",
-              "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Services\\Prompts.cs",
-              "RelativeDocumentMoniker": "Kontakti\\Services\\Prompts.cs",
-              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Services\\Prompts.cs",
-              "RelativeToolTip": "Kontakti\\Services\\Prompts.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T12:43:32.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "LlmDto.cs",
               "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Services\\LlmDto.cs",
               "RelativeDocumentMoniker": "Kontakti\\Services\\LlmDto.cs",
@@ -155,12 +94,11 @@
               "RelativeToolTip": "Kontakti\\Services\\LlmDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T12:42:49.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T12:42:49.408Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "LlmOptions.cs",
               "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Services\\LlmOptions.cs",
               "RelativeDocumentMoniker": "Kontakti\\Services\\LlmOptions.cs",
@@ -168,38 +106,113 @@
               "RelativeToolTip": "Kontakti\\Services\\LlmOptions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T12:42:02.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T12:42:02.841Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Program.cs",
               "RelativeDocumentMoniker": "Kontakti\\Program.cs",
               "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Program.cs",
               "RelativeToolTip": "Kontakti\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-28T12:39:53.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\appsettings.json",
               "RelativeDocumentMoniker": "Kontakti\\appsettings.json",
               "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\appsettings.json",
               "RelativeToolTip": "Kontakti\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-10-28T12:37:52.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "Kontakti\\Models\\Contact.cs",
+              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Models\\Contact.cs",
+              "RelativeToolTip": "Kontakti\\Models\\Contact.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T11:39:35.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Prompts.cs",
+              "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Services\\Prompts.cs",
+              "RelativeDocumentMoniker": "Kontakti\\Services\\Prompts.cs",
+              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Services\\Prompts.cs",
+              "RelativeToolTip": "Kontakti\\Services\\Prompts.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T12:43:32.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LlmClient.cs",
+              "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Services\\LlmClient.cs",
+              "RelativeDocumentMoniker": "Kontakti\\Services\\LlmClient.cs",
+              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Services\\LlmClient.cs",
+              "RelativeToolTip": "Kontakti\\Services\\LlmClient.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T12:45:44.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "QueryPlan.cs",
+              "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Models\\QueryPlan.cs",
+              "RelativeDocumentMoniker": "Kontakti\\Models\\QueryPlan.cs",
+              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Models\\QueryPlan.cs",
+              "RelativeToolTip": "Kontakti\\Models\\QueryPlan.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T12:46:33.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IntelligentSearchVm.cs",
+              "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\ViewModels\\IntelligentSearchVm.cs",
+              "RelativeDocumentMoniker": "Kontakti\\ViewModels\\IntelligentSearchVm.cs",
+              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\ViewModels\\IntelligentSearchVm.cs",
+              "RelativeToolTip": "Kontakti\\ViewModels\\IntelligentSearchVm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T12:48:16.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IntelligentSearch.cshtml",
+              "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Views\\Home\\IntelligentSearch.cshtml",
+              "RelativeDocumentMoniker": "Kontakti\\Views\\Home\\IntelligentSearch.cshtml",
+              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Views\\Home\\IntelligentSearch.cshtml",
+              "RelativeToolTip": "Kontakti\\Views\\Home\\IntelligentSearch.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T12:55:21.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Kontakti\\Views\\Home\\Index.cshtml",
@@ -207,12 +220,11 @@
               "RelativeToolTip": "Kontakti\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-07T12:08:54.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T12:08:54.567Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Kontakti\\Controllers\\HomeController.cs",
@@ -220,12 +232,11 @@
               "RelativeToolTip": "Kontakti\\Controllers\\HomeController.cs",
               "ViewState": "AgIAALoAAAAAAAAAAAAuwM8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T12:04:53.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T12:04:53.264Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Views\\Home\\Create.cshtml",
               "RelativeDocumentMoniker": "Kontakti\\Views\\Home\\Create.cshtml",
@@ -237,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Database.cs",
               "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Data\\Database.cs",
               "RelativeDocumentMoniker": "Kontakti\\Data\\Database.cs",
@@ -245,25 +256,23 @@
               "RelativeToolTip": "Kontakti\\Data\\Database.cs",
               "ViewState": "AgIAAMMAAAAAAAAAAAAmwCoBAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T11:54:08.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T11:54:08.523Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Kontakti.csproj",
               "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Kontakti.csproj",
               "RelativeDocumentMoniker": "Kontakti\\Kontakti.csproj",
-              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Kontakti.csproj*",
-              "RelativeToolTip": "Kontakti\\Kontakti.csproj*",
+              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Kontakti.csproj",
+              "RelativeToolTip": "Kontakti\\Kontakti.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-07T11:53:41.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T11:53:41.458Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Views\\Home\\Edit.cshtml",
               "RelativeDocumentMoniker": "Kontakti\\Views\\Home\\Edit.cshtml",
@@ -275,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Views\\Home\\Delete.cshtml",
               "RelativeDocumentMoniker": "Kontakti\\Views\\Home\\Delete.cshtml",
@@ -284,18 +293,16 @@
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-21T11:01:31.008Z"
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 81,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Contact.cs",
-              "DocumentMoniker": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Models\\Contact.cs",
-              "RelativeDocumentMoniker": "Kontakti\\Models\\Contact.cs",
-              "ToolTip": "D:\\users\\fmi\\Documents\\GitHub\\ST2-2025-Team-Pashev-Kontakti\\Kontakti\\Kontakti\\Models\\Contact.cs",
-              "RelativeToolTip": "Kontakti\\Models\\Contact.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T11:39:35.76Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
